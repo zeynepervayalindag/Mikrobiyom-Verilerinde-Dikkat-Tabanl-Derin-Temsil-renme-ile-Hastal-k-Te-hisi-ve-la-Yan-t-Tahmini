@@ -1,2 +1,2 @@
-# Mikrobiyom-Verilerinde-Dikkat-Tabanl-Derin-Temsil-renme-ile-Hastal-k-Te-hisi-ve-la-Yan-t-Tahmini
+# Deep Representation Learning With Attention Mechanisms For Disease Diagnosis and Drug Response Prediction In Microbiome Data 
 BLM5025 Biyoinformatik dersi final projesi
