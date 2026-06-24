@@ -1,0 +1,1175 @@
+python DM.py -r 1 -d marker_Cirrhosis --ae -dm 256 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9475, 0.766, 0.5833, 0.9333, 0.7179, '2026-05-04 15:12:44.630583', 548.46, 2.23, "{'C': 2, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --ae -dm 256 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9022, 0.8085, 0.6667, 0.9412, 0.7805, '2026-05-04 15:24:33.272671', 496.09, 60.46, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 4, 'n_estimators': 700}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --ae -dm 256 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9312, 0.9149, 0.875, 0.9545, 0.913, '2026-05-04 15:35:53.651956', 636.95, 231.77, "{'dropout_rate': 0.3, 'epochs': 100, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --ae -dm 256
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9266, 0.8936, 0.8333, 0.9524, 0.8889, '2026-05-04 15:46:53.897930', 574.5, 212.04, "{'dropout_rate': 0.3, 'epochs': 200, 'numHiddenLayers': 2, 'numUnits': 50}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --cae -dm 4,2 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9239, 0.8298, 0.7917, 0.8636, 0.8261, '2026-05-04 16:36:42.126551', 2847.82, 3.6, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --cae -dm 4,2 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8605, 0.766, 0.6667, 0.8421, 0.7442, '2026-05-04 17:25:56.978612', 2910.85, 62.68, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --cae -dm 4,2 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9529, 0.8298, 0.7083, 0.9444, 0.8095, '2026-05-04 18:21:43.836656', 3125.69, 283.31, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --cae -dm 4,2
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9185, 0.8298, 0.75, 0.9, 0.8182, '2026-05-04 19:15:08.361112', 3171.08, 261.82, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 2, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8967, 0.8085, 0.875, 0.7778, 0.8235, '2026-05-04 19:27:18.903715', 48.34, 2.37, "{'C': 0.5, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8967, 0.7872, 0.7083, 0.85, 0.7727, '2026-05-04 19:29:52.754120', 92.86, 52.37, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8542, 0.766, 0.75, 0.7826, 0.766, '2026-05-04 19:34:36.182821', 257.72, 214.21, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --vae -dm 100,20
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8578, 0.8085, 0.75, 0.8571, 0.8, '2026-05-04 19:41:00.832922', 331.39, 201.26, "{'dropout_rate': 0.3, 'epochs': 300, 'numHiddenLayers': 2, 'numUnits': 10}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d marker_Colorectal --ae -dm 256   
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8733, 0.8, 0.7, 0.7778, 0.7368, '2026-05-04 19:52:48.744350', 572.14, 168.55, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 1, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_Colorectal --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.82, 0.6, 0.0, 0.0, 0.0, '2026-05-04 20:00:08.243857', 362.7, 1.83, "{'C': 0.03125, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Colorectal --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8733, 0.68, 0.2, 1.0, 0.3333, '2026-05-04 20:15:48.037774', 373.36, 53.87, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 4, 'n_estimators': 900}"]
+
+python DM.py -r 1 -d marker_Colorectal --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.82, 0.76, 0.7, 0.7, 0.7, '2026-05-04 20:25:08.462727', 425.45, 180.08, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_Colorectal --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8267, 0.76, 0.6, 0.75, 0.6667, '2026-05-05 11:50:11.605713', 1402.37, 2.11, "{'C': 32, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Colorectal --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7233, 0.72, 0.4, 0.8, 0.5333, '2026-05-05 12:19:34.624038', 1675.19, 55.43, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_Colorectal --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7467, 0.84, 0.6, 1.0, 0.75, '2026-05-05 15:23:36.267137', 2009.69, 209.49, "{'dropout_rate': 0.1, 'epochs': 200, 'numHiddenLayers': 2, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_Colorectal  --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5533, 0.6, 0.0, 0.0, 0.0, '2026-05-05 15:25:17.685789', 28.26, 2.17, "{'C': 0.5, 'gamma': 2, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Colorectal  --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4667, 0.6, 0.1, 0.5, 0.1667, '2026-05-05 15:27:37.306244', 75.11, 50.35, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_Colorectal  --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.58, 0.52, 0.3, 0.375, 0.3333, '2026-05-05 15:31:44.943009', 211.93, 170.89, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d marker_IBD --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9176, 0.7727, 0.0, 0.0, 0.0, '2026-05-05 15:36:55.515396', 199.91, 1.78, "{'C': 0.125, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_IBD --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8824, 0.7727, 0.0, 0.0, 0.0, '2026-05-05 15:55:57.222345', 225.35, 51.33, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_IBD --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8765, 0.7727, 0.2, 0.5, 0.2857, '2026-05-05 16:05:51.208617', 362.0, 179.99, "{'dropout_rate': 0.3, 'epochs': 100, 'numHiddenLayers': 2, 'numUnits': 10}"]
+
+python DM.py -r 1 -d marker_IBD --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7647, 0.7273, 0.2, 0.3333, 0.25, '2026-05-05 16:28:45.246301', 1297.01, 1.99, "{'C': 8, 'gamma': 0.00048828125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_IBD --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8941, 0.8636, 0.6, 0.75, 0.6667, '2026-05-05 16:49:56.014128', 1220.84, 53.49, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 700}"]
+
+python DM.py -r 1 -d marker_IBD --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9, 0.7727, 0.2, 0.5, 0.2857, '2026-05-05 17:21:25.705880', 1623.53, 208.02, "{'dropout_rate': 0.3, 'epochs': 200, 'numHiddenLayers': 2, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_IBD --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6353, 0.7727, 0.0, 0.0, 0.0, '2026-05-05 17:24:27.396943', 22.17, 1.75, "{'C': 0.03125, 'gamma': 0.03125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_IBD --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7882, 0.7727, 0.0, 0.0, 0.0, '2026-05-05 17:26:20.043592', 67.77, 49.93, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 700}"]
+
+python DM.py -r 1 -d marker_IBD --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8706, 0.7273, 0.2, 0.3333, 0.25, '2026-05-05 17:30:45.915198', 194.55, 170.94, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 50}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d marker_Obesity --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6768, 0.6471, 1.0, 0.6471, 0.7857, '2026-05-05 17:39:10.136122', 477.38, 2.37, "{'C': 0.03125, 'gamma': 0.00048828125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Obesity --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6919, 0.6471, 1.0, 0.6471, 0.7857, '2026-05-05 17:46:14.064063', 378.16, 62.87, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_Obesity --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6785, 0.6667, 0.8788, 0.6905, 0.7733, '2026-05-05 17:57:25.959327', 625.82, 250.25, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 2, 'numUnits': 50}"]
+
+python DM.py -r 1 -d marker_Obesity --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5168, 0.5294, 0.6364, 0.6364, 0.6364, '2026-05-05 18:36:54.900630', 2331.53, 4.95, "{'C': 32, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Obesity --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5859, 0.6471, 0.9394, 0.6596, 0.775, '2026-05-05 19:24:42.902951', 2759.13, 72.94, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_Obesity --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5968, 0.6471, 1.0, 0.6471, 0.7857, '2026-05-05 20:25:39.880531', 3020.78, 335.41, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_Obesity --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.3401, 0.6471, 1.0, 0.6471, 0.7857, '2026-05-05 19:26:49.038628', 83.63, 12.24, "{'C': 0.03125, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Obesity --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5909, 0.6471, 0.8485, 0.6829, 0.7568, '2026-05-05 19:29:24.403594', 119.41, 55.54, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_Obesity --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5892, 0.7059, 0.9091, 0.7143, 0.8, '2026-05-05 19:34:51.368865', 290.16, 230.42, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 3, 'numUnits': 100}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d marker_T2D --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7517, 0.6812, 0.6765, 0.6765, 0.6765, '2026-05-06 14:09:07.824069', 505.01, 2.99, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_T2D --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6706, 0.5652, 0.4412, 0.5769, 0.5, '2026-05-06 14:19:58.319471', 584.94, 71.0, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 3, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_T2D --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7824, 0.7101, 0.7059, 0.7059, 0.7059, '2026-05-06 14:34:00.716047', 811.14, 280.57, "{'dropout_rate': 0.3, 'epochs': 200, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_T2D --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7462, 0.6522, 0.6176, 0.6562, 0.6364, '2026-05-06 15:19:49.153559', 2480.05, 8.77, "{'C': 2, 'gamma': 0.00048828125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_T2D --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6866, 0.6232, 0.6176, 0.6176, 0.6176, '2026-05-06 16:02:42.637517', 2521.74, 82.11, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 3, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_T2D --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7916, 0.7391, 0.6176, 0.8077, 0.7, '2026-05-06 16:50:10.203289', 2798.88, 359.47, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_T2D --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4462, 0.5072, 0.0, 0.0, 0.0, '2026-05-06 16:52:40.395673', 96.21, 3.08, "{'C': 2, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_T2D --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6538, 0.6522, 0.5588, 0.6786, 0.6129, '2026-05-06 16:59:13.354656', 350.49, 58.98, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_T2D --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5471, 0.5072, 0.5294, 0.5, 0.5143, '2026-05-06 17:08:39.536794', 451.39, 254.4, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d marker_WT2D --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.0909, 0.55, 1.0, 0.55, 0.7097, '2026-05-06 17:11:16.774698', 135.09, 1.79, "{'C': 0.03125, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_WT2D --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9495, 0.85, 0.9091, 0.8333, 0.8696, '2026-05-06 17:23:25.261814', 125.08, 51.29, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 700}"]
+
+python DM.py -r 1 -d marker_WT2D --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9091, 0.7, 0.5455, 0.8571, 0.6667, '2026-05-06 17:29:23.288618', 320.66, 156.6, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_WT2D --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6768, 0.65, 0.5455, 0.75, 0.6316, '2026-05-06 17:45:24.432417', 933.86, 1.91, "{'C': 0.03125, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d marker_WT2D --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8687, 0.9, 0.9091, 0.9091, 0.9091, '2026-05-06 18:06:54.647094', 1068.57, 52.84, "{'criterion': 'gini', 'max_features': 'log2', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_WT2D --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8182, 0.75, 0.6364, 0.875, 0.7368, '2026-05-06 18:28:39.151897', 1219.56, 175.4, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 30}"]
+
+python DM.py -r 1 -d marker_WT2D --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7172, 0.65, 0.7273, 0.6667, 0.6957, '2026-05-06 18:29:31.974899', 22.5, 1.87, "{'C': 0.125, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d marker_WT2D --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9394, 0.75, 0.9091, 0.7143, 0.8, '2026-05-06 18:31:09.153519', 70.86, 50.11, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_WT2D --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7071, 0.7, 0.6364, 0.7778, 0.7, '2026-05-06 18:34:32.031849', 172.28, 151.89, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python DM.py -r 1 -d abundance_Cirrhosis --ae -dm 256 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8025, 0.7234, 0.6667, 0.7619, 0.7111, '2026-05-06 19:01:07.199370', 25.37, 2.22, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --ae -dm 256 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7935, 0.7872, 0.75, 0.8182, 0.7826, '2026-05-06 19:05:29.292698', 83.41, 59.5, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --ae -dm 256 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8696, 0.8085, 0.75, 0.8571, 0.8, '2026-05-06 19:10:06.477419', 253.93, 231.28, "{'dropout_rate': 0.1, 'epochs': 200, 'numHiddenLayers': 1, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --cae -dm 4,2 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.846, 0.8298, 0.8333, 0.8333, 0.8333, '2026-05-06 19:17:52.385746', 75.01, 4.65, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --cae -dm 4,2 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9094, 0.8511, 0.75, 0.9474, 0.8372, '2026-05-06 19:21:00.691417', 131.77, 59.85, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --cae -dm 4,2 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8424, 0.7447, 0.7083, 0.7727, 0.7391, '2026-05-06 19:27:49.009809', 376.22, 304.77, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 50}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7446, 0.7447, 0.625, 0.8333, 0.7143, '2026-05-06 19:28:34.669506', 7.31, 3.31, "{'C': 0.03125, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7971, 0.7234, 0.75, 0.72, 0.7347, '2026-05-06 19:30:36.609685', 58.41, 55.09, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 3, 'n_estimators': 500}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.817, 0.7234, 0.75, 0.72, 0.7347, '2026-05-06 19:35:01.347329', 220.61, 216.02, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 3, 'numUnits': 50}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d abundance_Colorectal --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.76, 0.6, 0.0, 0.0, 0.0, '2026-05-06 19:35:43.797213', 16.72, 2.9, "{'C': 0.125, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Colorectal --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7667, 0.72, 0.4, 0.8, 0.5333, '2026-05-06 19:37:17.203809', 66.76, 53.02, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Colorectal --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7667, 0.52, 0.0, 0.0, 0.0, '2026-05-06 19:40:54.834216', 194.56, 180.68, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 3, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_Colorectal --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7933, 0.76, 0.6, 0.75, 0.6667, '2026-05-06 19:42:06.966174', 52.94, 2.11, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Colorectal --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7867, 0.72, 0.4, 0.8, 0.5333, '2026-05-06 19:44:14.733066', 104.31, 54.97, "{'criterion': 'gini', 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 900}"]
+
+python DM.py -r 1 -d abundance_Colorectal --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7467, 0.6, 0.0, 0.0, 0.0, '2026-05-06 19:49:01.663118', 268.06, 218.54, "{'dropout_rate': 0.1, 'epochs': 100, 'numHiddenLayers': 3, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_Colorectal  --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7867, 0.64, 0.6, 0.5455, 0.5714, '2026-05-06 19:49:51.273291', 4.38, 1.91, "{'C': 0.03125, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d abundance_Colorectal  --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7667, 0.68, 0.5, 0.625, 0.5556, '2026-05-06 19:51:14.061871', 53.25, 50.78, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d abundance_Colorectal  --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.78, 0.68, 0.7, 0.5833, 0.6364, '2026-05-06 19:54:23.921372', 172.32, 169.85, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 100}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d abundance_IBD --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6353, 0.7727, 0.0, 0.0, 0.0, '2026-05-06 19:55:30.085313', 38.06, 1.76, "{'C': 0.125, 'gamma': 0.00048828125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_IBD --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6353, 0.8182, 0.2, 1.0, 0.3333, '2026-05-06 19:57:22.566657', 87.14, 51.74, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_IBD --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6941, 0.7727, 0.4, 0.5, 0.4444, '2026-05-06 20:01:17.913538', 216.69, 181.2, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 1, 'numUnits': 50}"]
+
+python DM.py -r 1 -d abundance_IBD --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7529, 0.7727, 0.6, 0.5, 0.5455, '2026-05-06 20:02:49.930345', 49.19, 1.97, "{'C': 0.03125, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d abundance_IBD --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8059, 0.8182, 0.2, 1.0, 0.3333, '2026-05-06 20:04:56.061520', 99.73, 52.25, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 500}"]
+
+python DM.py -r 1 -d abundance_IBD --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6941, 0.7727, 0.4, 0.5, 0.4444, '2026-05-06 20:09:55.449182', 274.6, 224.41, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 3, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_IBD --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7059, 0.7727, 0.0, 0.0, 0.0, '2026-05-06 20:10:27.187475', 4.98, 1.78, "{'C': 0.03125, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_IBD --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7176, 0.8182, 0.2, 1.0, 0.3333, '2026-05-06 20:11:51.816494', 53.81, 50.7, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_IBD --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6353, 0.7273, 0.2, 0.3333, 0.25, '2026-05-06 20:15:16.200442', 178.41, 175.19, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 50}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d abundance_Obesity --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5488, 0.6078, 0.7273, 0.6857, 0.7059, '2026-05-06 20:16:17.163443', 39.74, 2.76, "{'C': 32, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Obesity --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.569, 0.6078, 0.8788, 0.6444, 0.7436, '2026-05-06 20:18:24.720596', 101.52, 64.35, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Obesity --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6061, 0.6275, 0.8485, 0.6667, 0.7467, '2026-05-06 20:23:33.223423', 283.96, 249.49, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_Obesity --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5101, 0.5882, 0.8182, 0.6429, 0.72, '2026-05-06 20:24:55.781739', 61.38, 5.31, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Obesity --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5926, 0.6863, 0.9697, 0.6809, 0.8, '2026-05-06 20:27:17.225581', 119.42, 63.25, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Obesity --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5522, 0.6078, 0.7273, 0.6857, 0.7059, '2026-05-06 20:34:07.224765', 382.24, 314.27, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_Obesity --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5657, 0.6078, 0.9091, 0.6383, 0.75, '2026-05-06 20:34:39.365558', 7.26, 4.07, "{'C': 32, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Obesity --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5067, 0.6078, 0.8485, 0.6512, 0.7368, '2026-05-06 20:35:59.739387', 60.01, 56.05, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}"]
+
+python DM.py -r 1 -d abundance_Obesity --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5707, 0.6471, 1.0, 0.6471, 0.7857, '2026-05-06 20:40:24.811561', 234.15, 230.95, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 3, 'numUnits': 10}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d abundance_T2D --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.695, 0.6232, 0.7059, 0.6, 0.6486, '2026-05-06 20:41:09.034419', 27.04, 3.58, "{'C': 32, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_T2D --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7748, 0.7246, 0.7647, 0.7027, 0.7324, '2026-05-06 20:43:09.146912', 93.33, 70.97, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 5, 'n_estimators': 500}"]
+
+python DM.py -r 1 -d abundance_T2D --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6983, 0.7101, 0.6765, 0.7188, 0.697, '2026-05-06 20:48:34.887727', 300.67, 277.62, "{'dropout_rate': 0.1, 'epochs': 100, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+python DM.py -r 1 -d abundance_T2D --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7538, 0.7101, 0.7941, 0.675, 0.7297, '2026-05-06 20:50:30.932936', 95.74, 11.92, "{'C': 2, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_T2D --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7571, 0.6522, 0.6765, 0.6389, 0.6571, '2026-05-06 20:53:23.852105', 144.26, 67.28, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 2, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d abundance_T2D --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7113, 0.6812, 0.7647, 0.65, 0.7027, '2026-05-06 21:01:18.527786', 457.76, 375.87, "{'dropout_rate': 0.1, 'epochs': 100, 'numHiddenLayers': 3, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_T2D --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7571, 0.6957, 0.6765, 0.697, 0.6866, '2026-05-06 21:02:04.169378', 9.49, 4.99, "{'C': 0.5, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_T2D --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.758, 0.7246, 0.7647, 0.7027, 0.7324, '2026-05-06 21:03:24.865573', 62.27, 57.63, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_T2D --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7681, 0.6812, 0.7941, 0.6429, 0.7105, '2026-05-06 21:08:02.472478', 260.01, 255.93, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 3, 'numUnits': 100}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d abundance_WT2D --ae -dm 256  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6162, 0.75, 0.8182, 0.75, 0.7826, '2026-05-06 21:08:49.274578', 24.07, 1.78, "{'C': 32, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_WT2D --ae -dm 256  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5505, 0.6, 0.8182, 0.6, 0.6923, '2026-05-06 21:10:34.651932', 73.52, 51.99, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d abundance_WT2D --ae -dm 256  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.3838, 0.5, 0.7273, 0.5333, 0.6154, '2026-05-06 21:14:04.485048', 180.02, 158.27, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+python DM.py -r 1 -d abundance_WT2D --cae -dm 4,2  -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6566, 0.7, 0.7273, 0.7273, 0.7273, '2026-05-06 21:15:17.805363', 45.56, 1.89, "{'C': 32, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_WT2D --cae -dm 4,2  -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7172, 0.55, 0.7273, 0.5714, 0.64, '2026-05-06 21:17:10.414775', 95.01, 50.95, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_WT2D --cae -dm 4,2  -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.596, 0.6, 0.6364, 0.6364, 0.6364, '2026-05-06 21:21:10.028638', 216.7, 172.5, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 30}"]
+
+python DM.py -r 1 -d abundance_WT2D --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.596, 0.55, 1.0, 0.55, 0.7097, '2026-05-06 21:21:32.797838', 4.75, 1.92, "{'C': 0.125, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_WT2D --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6869, 0.65, 0.8182, 0.6429, 0.72, '2026-05-06 21:22:41.605722', 54.47, 51.81, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 900}"]
+
+python DM.py -r 1 -d abundance_WT2D --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.3535, 0.45, 0.6364, 0.5, 0.56, '2026-05-06 21:25:31.017584', 152.61, 150.02, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+
+
+----------------------------------------------------------------------
+python DM.py -d abundance_Cirrhosis --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8406, 0.766, 0.8333, 0.7407, 0.7843, '2026-06-16 17:00:42.479609', 99.86, 52.49, "{'C': 0.03125, 'kernel': 'linear'}"]
+
+python DM.py -d abundance_Cirrhosis --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7971, 0.6809, 0.8333, 0.6452, 0.7273, '2026-06-16 17:30:52.982660', 348.44, 305.14, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8007, 0.6383, 0.5417, 0.6842, 0.6047, '2026-06-17 06:49:27.907810', 22833.95, 22789.44, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+python DM.py -r 1 -d abundance_Colorectal --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5867, 0.6, 0.0, 0.0, 0.0, '2026-06-17 07:24:02.040215', 46.7, 15.68, "{'C': 0.03125, 'gamma': 0.0078125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Colorectal --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7667, 0.68, 0.5, 0.625, 0.5556, '2026-06-17 07:30:28.818504', 335.97, 303.23, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 3, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Colorectal --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6267, 0.64, 0.4, 0.5714, 0.4706, '2026-06-17 13:27:28.613777', 21396.45, 21365.65, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_IBD  --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7059, 0.7727, 0.2, 0.5, 0.2857, '2026-06-17 13:33:04.238905', 30.29, 1.4, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_IBD  --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6, 0.7273, 0.2, 0.3333, 0.25, '2026-06-17 13:42:28.662922', 331.4, 302.94, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_IBD  --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5647, 0.7273, 0.2, 0.3333, 0.25, '2026-06-17 19:50:15.471613', 21855.67, 21827.25, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 50}"]
+
+python DM.py -r 1 -d abundance_Obesity --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5017, 0.6471, 1.0, 0.6471, 0.7857, '2026-06-17 19:56:02.398459', 166.08, 140.63, "{'C': 0.125, 'gamma': 0.03125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Obesity --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5976, 0.6275, 0.8788, 0.6591, 0.7532, '2026-06-17 20:02:36.162551', 339.25, 313.91, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Obesity --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5, 0.5882, 0.8788, 0.6304, 0.7342, '2026-06-18 03:00:43.067613', 23818.23, 23793.58, "{'dropout_rate': 0.3, 'epochs': 100, 'numHiddenLayers': 1, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_T2D --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7328, 0.6522, 0.7353, 0.625, 0.6757, '2026-06-18 03:09:47.156802', 505.55, 457.01, "{'C': 2, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_T2D --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7118, 0.6667, 0.7353, 0.641, 0.6849, '2026-06-18 03:35:35.999544', 369.08, 322.71, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 900}"]
+
+python DM.py -r 1 -d abundance_T2D --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp-t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7134, 0.6667, 0.7059, 0.6486, 0.6761, '2026-06-18 10:40:10.443307', 23950.93, 23903.87, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 1, 'numUnits': 100}"]
+
+python DM.py -r 1 -d abundance_WT2D --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4848, 0.45, 0.4545, 0.5, 0.4762, '2026-06-18 03:46:54.346857', 29.66, 4.29, "{'C': 2, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d abundance_WT2D --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5253, 0.45, 0.4545, 0.5, 0.4762, '2026-06-18 03:53:24.515207', 321.7, 297.88, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_WT2D --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6566, 0.55, 0.5455, 0.6, 0.5714, '2026-06-18 16:29:08.138116', 20828.66, 20802.69, "{'dropout_rate': 0.1, 'epochs': 200, 'numHiddenLayers': 1, 'numUnits': 50}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9185, 0.7234, 0.5417, 0.8667, 0.6667, '2026-06-18 16:38:08.424462', 104.96, 93.89, "{'C': 2, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9293, 0.8298, 0.7083, 0.9444, 0.8095, '2026-06-18 16:45:08.078442', 315.75, 304.82, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 3, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_Cirrhosis --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.9321, 0.8511, 0.7917, 0.9048, 0.8444, '2026-06-18 23:15:39.995375', 22804.13, 22793.1, "{'dropout_rate': 0.1, 'epochs': 200, 'numHiddenLayers': 3, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_Colorectal --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4333, 0.6, 0.0, 0.0, 0.0, '2026-06-18 23:30:38.490368', 14.65, 9.71, "{'C': 0.125, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Colorectal --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5533, 0.48, 0.1, 0.2, 0.1333, '2026-06-18 23:46:16.719217', 302.12, 297.47, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}"]
+
+python DM.py -r 1 -d marker_Colorectal --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.44, 0.64, 0.3, 0.6, 0.4, '2026-06-19 08:57:14.386125', 22123.12, 22118.2, "{'dropout_rate': 0.1, 'epochs': 300, 'numHiddenLayers': 2, 'numUnits': 10}"]
+ 
+python DM.py -r 1 -d marker_IBD --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7294, 0.7727, 0.0, 0.0, 0.0, '2026-06-19 00:46:54.049668', 4.71, 1.14, "{'C': 0.03125, 'gamma': 0.001953125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_IBD --umaa --dims 64,32 -e 100 --num_heads 4 -m rf-t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7412, 0.7727, 0.0, 0.0, 0.0, '2026-06-19 00:53:34.130709', 302.89, 299.07, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d marker_IBD --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6353, 0.8182, 0.6, 0.6, 0.6, '2026-06-19 16:32:30.251632', 21471.43, 21467.55, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 50}"]
+
+python DM.py -r 1 -d marker_Obesity --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4832, 0.6471, 1.0, 0.6471, 0.7857, '2026-06-19 01:13:11.796972', 168.34, 160.34, "{'C': 0.125, 'gamma': 0.03125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_Obesity --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 --pca 
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5623, 0.6471, 1.0, 0.6471, 0.7857, '2026-06-19 01:22:17.719228', 319.45, 311.86, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_Obesity --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6919, 0.6667, 0.7879, 0.7222, 0.7536, '2026-06-19 23:00:31.852164', 22988.01, 22980.3, "{'dropout_rate': 0.3, 'epochs': 100, 'numHiddenLayers': 1, 'numUnits': 100}"]
+
+python DM.py -r 1 -d marker_T2D --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6218, 0.5797, 0.1765, 0.8571, 0.2927, '2026-06-19 01:45:01.690574', 1178.61, 1161.21, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_T2D --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6298, 0.6087, 0.2059, 1.0, 0.3415, '2026-06-19 02:26:15.920752', 336.78, 319.4, "{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 300}"]
+python DM.py -r 1 -d marker_T2D --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5647, 0.5942, 0.4412, 0.625, 0.5172, '2026-06-20 05:43:56.492056', 23589.76, 23572.32, "{'dropout_rate': 0.1, 'epochs': 100, 'numHiddenLayers': 3, 'numUnits': 50}"]
+
+python DM.py -r 1 -d marker_WT2D --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.798, 0.75, 0.7273, 0.8, 0.7619, '2026-06-19 02:29:52.309668', 4.42, 1.33, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d marker_WT2D --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7172, 0.7, 0.8182, 0.6923, 0.75, '2026-06-19 02:36:29.973752', 300.24, 296.94, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d marker_WT2D --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 --pca
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.798, 0.75, 0.7273, 0.8, 0.7619, '2026-06-20 11:50:25.036452', 20726.17, 20723.12, "{'dropout_rate': 0.1, 'epochs': 100, 'numHiddenLayers': 1, 'numUnits': 100}"]
+
+----------------------------------------------------------------------
+python DM.py -r 1 -d abundance_Cirrhosis --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7917, 0.7021, 0.6667, 0.7273, 0.6957, '2026-06-20 13:23:08.179651', 137.36, 92.81, "{'C': 8, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8315, 0.7234, 0.7083, 0.7391, 0.7234, '2026-06-20 13:29:41.732796', 355.55, 310.7, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 900}"]
+
+python DM.py -r 1 -d abundance_Cirrhosis --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d abundance_Colorectal --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6, 0.6, 0.0, 0.0, 0.0, '2026-06-20 13:31:58.764401', 42.57, 10.22, "{'C': 0.03125, 'gamma': 0.0078125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_Colorectal --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7067, 0.64, 0.4, 0.5714, 0.4706, '2026-06-20 13:38:48.082918', 334.87, 301.97, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_Colorectal --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d abundance_IBD --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7059, 0.8182, 0.2, 1.0, 0.3333, '2026-06-20 13:46:33.364796', 29.72, 1.23, "{'C': 2, 'gamma': 0.0001220703125, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_IBD --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d abundance_IBD --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d abundance_Obesity --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d abundance_Obesity --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d abundance_Obesity --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d abundance_T2D --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d abundance_T2D --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d abundance_T2D --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d abundance_WT2D --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d abundance_WT2D --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d abundance_WT2D --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d marker_Cirrhosis --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d marker_Cirrhosis --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d marker_Cirrhosis --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d marker_Colorectal --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d marker_Colorectal --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d marker_Colorectal --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d marker_IBD --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d marker_IBD --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d marker_IBD --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d marker_Obesity --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d marker_Obesity --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d marker_Obesity --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d marker_T2D --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d marker_T2D --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d marker_T2D --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+python DM.py -r 1 -d marker_WT2D --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+
+python DM.py -r 1 -d marker_WT2D --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+
+python DM.py -r 1 -d marker_WT2D --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+
+
+----------------------------------------------------------------------
+
+python DM.py -d abundance_DrugResponse --umaa --dims 64,32 -e 100 --num_heads 4 -m svm -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4, 0.625, 0.0, 0.0, 0.0, '2026-06-20 14:00:40.304086', 15.07, 0.96, "{'C': 0.03125, 'gamma': 0.5, 'kernel': 'rbf'}"]
+
+
+python DM.py -r 1 -d abundance_DrugResponse --umaa --dims 64,32 -e 100 --num_heads 4 -m rf -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.2667, 0.375, 0.0, 0.0, 0.0, '2026-06-20 14:10:15.462743', 299.65, 294.06, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --umaa --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1 -sc 2000
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.8, 0.625, 0.0, 0.0, 0.0, '2026-06-20 20:06:10.188341', 20689.82, 20684.34, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 3, 'numUnits': 30}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --skytu --dims 64,32 -e 100 --num_heads 4 -m svm -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.2, 0.625, 0.0, 0.0, 0.0, '2026-06-20 14:11:03.360545', 6.34, 0.76, "{'C': 0.03125, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --skytu --dims 64,32 -e 100 --num_heads 4 -m rf -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.2667, 0.375, 0.0, 0.0, 0.0, '2026-06-20 14:18:57.150159', 298.67, 293.01, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --skytu --dims 64,32 -e 100 --num_heads 4 -m mlp -t 1
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6, 0.625, 0.0, 0.0, 0.0, '2026-06-21 16:24:08.623381', 20699.89, 20693.44, "{'dropout_rate': 0.3, 'epochs': 50, 'numHiddenLayers': 1, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --ae -dm 256 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6, 0.625, 0.6667, 0.5, 0.5714, '2026-06-21 16:25:14.791211', 30.29, 1.97, "{'C': 32, 'gamma': 2, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --ae -dm 256 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.7333, 0.75, 0.6667, 0.6667, 0.6667, '2026-06-21 16:27:47.483898', 75.81, 50.15, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 4, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --ae -dm 256 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.4667, 0.625, 0.0, 0.0, 0.0, '2026-06-21 16:30:58.569327', 163.36, 137.77, "{'dropout_rate': 0.1, 'epochs': 50, 'numHiddenLayers': 3, 'numUnits': 10}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --cae -dm 4,2 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.3333, 0.625, 0.0, 0.0, 0.0, '2026-06-21 16:31:44.507439', 10.92, 1.78, "{'C': 0.03125, 'gamma': 2, 'kernel': 'rbf'}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --cae -dm 4,2 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.2667, 0.625, 0.0, 0.0, 0.0, '2026-06-21 16:34:09.028747', 59.52, 50.54, "{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 3, 'n_estimators': 300}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --cae -dm 4,2 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5333, 0.625, 0.0, 0.0, 0.0, '2026-06-21 16:37:58.063700', 151.1, 142.24, "{'dropout_rate': 0.3, 'epochs': 30, 'numHiddenLayers': 1, 'numUnits': 30}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --vae -dm 100,20 -m svm
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5333, 0.5, 0.3333, 0.3333, 0.3333, '2026-06-21 16:38:39.638584', 13.21, 1.77, "{'C': 8, 'kernel': 'linear'}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --vae -dm 100,20 -m rf
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.6, 0.625, 0.0, 0.0, 0.0, '2026-06-21 16:40:30.353745', 60.8, 49.63, "{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}"]
+
+python DM.py -r 1 -d abundance_DrugResponse --vae -dm 100,20 -m mlp
+
+Accuracy metrics
+AUC, ACC, Recall, Precision, F1_score, time-end, runtime(sec), classfication time(sec), best hyper-parameter
+[0.5333, 0.625, 0.3333, 0.5, 0.4, '2026-06-21 16:44:39.216439', 142.79, 131.29, "{'dropout_rate': 0.1, 'epochs': 30, 'numHiddenLayers': 2, 'numUnits': 30}"]
+
+
